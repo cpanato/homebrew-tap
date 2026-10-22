@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/octo-sts/app/refs/heads/main/pkg/octosts/octosts.TrustPolicy.json
+
+# Lets the wt-cleanup release workflow push its cask here on v* tags.
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: "repo:cpanato/wt-cleanup:ref:refs/tags/v.+"
+claim_pattern:
+  repository_id: "1429472241" # cpanato/wt-cleanup
+  job_workflow_ref: "cpanato/wt-cleanup/\\.github/workflows/release\\.yaml@refs/tags/v.+"
+
+permissions:
+  contents: write
