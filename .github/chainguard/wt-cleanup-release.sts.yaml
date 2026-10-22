@@ -2,7 +2,7 @@
 
 # Lets the wt-cleanup release workflow push its cask here on v* tags.
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: "repo:cpanato/wt-cleanup:ref:refs/tags/v.+"
+subject_pattern: "repo:cpanato@4115580/wt-cleanup@1429472241:ref:refs/tags/v.+"
 claim_pattern:
   repository_id: "1429472241" # cpanato/wt-cleanup
   job_workflow_ref: "cpanato/wt-cleanup/\\.github/workflows/release\\.yaml@refs/tags/v.+"
